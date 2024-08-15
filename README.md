@@ -1,7 +1,21 @@
 # oxml.js
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jiteshkumawat/oxml.js/issues) [![Build Status](https://travis-ci.org/jiteshkumawat/oxml.js.svg?branch=master)](https://travis-ci.org/jiteshkumawat/oxml.js)
 
-[![NPM Download Stats](https://nodei.co/npm/oxmljs.png?downloads=true)](https://www.npmjs.com/package/oxmljs)
+
+> `oxml.js` has not received updates since 2021, this is a fork aiming to:
+> - update oxml for use with pptx files
+> - reduce dependencies
+> - support openXML ingest and parsing
+> - rewrite in TypeScript
+> - rewrite for Bun use
+>
+> I do not intend to maintain the same API surface at all. This library was started in an age where build tooling was not as robust as we have it today, so most of the tooling will be trimmed down to make this more maintainable.
+>
+> Below is the old README, expect this place to change a lot
+>
+---
+<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jiteshkumawat/oxml.js/issues) [![Build Status](https://travis-ci.org/jiteshkumawat/oxml.js.svg?branch=master)](https://travis-ci.org/jiteshkumawat/oxml.js) -->
+
+<!-- [![NPM Download Stats](https://nodei.co/npm/oxmljs.png?downloads=true)](https://www.npmjs.com/package/oxmljs) -->
 ## Javascript library for creating and manipulating Open XML Documents like docx, xlsx, etc.
 This is a small javascript library, which can let you download / export data in open xml documents like docx and xlsx which can be opened in any desktop or online document processing application such as Microsoft Excel, Google Sheets, etc. User can export data from charts or grid without making any server calls and thus saving processing units.
 
@@ -11,11 +25,12 @@ Open XML documents are just a ziped collection of XML files, thus only library r
 * Alignment of cells: User can now style vertical align and horizontal align by passing vAlignment and hAlignment attributes in style method. Possible values for vAlignment are top, center, bottom, and that of hAlignment are left, center, and bottom.
 
 Sample code:
-            worksheet.row(2, 1, "center aligned content", {
-                hAlignment: "center",
-                vAlignment: "center"
-            });
-
+```javascript
+worksheet.row(2, 1, "center aligned content", {
+    hAlignment: "center",
+    vAlignment: "center"
+});
+```
 * Merge cells: User can now merge cells using merge method of worksheet. Parameter passed to merge method is string representation of range of cells.
 
 Sample code:
@@ -23,9 +38,9 @@ Sample code:
 
 ## Dependencies
 
-* [JSZIP](https://stuk.github.io/jszip/)
-* [File Saver](https://github.com/eligrey/FileSaver.js/)
-  *- But not required. oxml.js can work on modern browsers without File Saver. Please see browser supported section for more details.*
+<!-- * [JSZIP](https://stuk.github.io/jszip/) -->
+<!-- * [File Saver](https://github.com/eligrey/FileSaver.js/) -->
+  <!-- *- But not required. oxml.js can work on modern browsers without File Saver. Please see browser supported section for more details.* -->
 
 ## Installation
 
