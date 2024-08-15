@@ -1,6 +1,6 @@
 {
   "name": "bun-oxml",
-  "module": "index.ts",
+  "module": "src/main.ts",
   "type": "module",
   "devDependencies": {
     "@swc/cli": "^0.4.0",
@@ -9,5 +9,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@zip.js/zip.js": "^2.7.48"
   }
 }
