@@ -2,9 +2,9 @@
 
 > `neoxml` aims to provide a straightforward interface with OpenXML files (`.pptx`, `.docx`, `.xlsx`) for parsing, programmatic construction, preview rendering and file generation. Intended for use with Bun.js.
 
-Though this project was originally intended as a Bun fork of `oxml.js`, I realised that a complete rewrite was necessary and decided to start fresh with a completely different API based on projects like  @gitbrent's [`PPTXGenJS`](https://github.com/gitbrent/PptxGenJS) and Eric White's `OpenXML-SDK-JS` (via the latest MIT-licensed spiritual successor I could find, the badly-named [`openxml`](https://github.com/rangatia/openxml/tree/master)), all no longer actively maintained, but all containing valuable expertise for tooling that must continue to exist.
+Though this project was originally intended as a Bun fork of [`oxml.js`](https://github.com/jiteshkumawat/oxml.js), I realised that the library was primarily focused on `.xlsx` and because it didn't support ESM, that a complete rewrite was necessary. I decided to start fresh with a completely different API based on projects like  @gitbrent's [`PPTXGenJS`](https://github.com/gitbrent/PptxGenJS) and Eric White's `OpenXML-SDK-JS` (via the latest MIT-licensed spiritual successor I could find, the badly-named [`openxml`](https://github.com/rangatia/openxml/tree/master)), all no longer actively maintained, but all containing valuable expertise for tooling that must continue to be maintained.
 
-Usecases I intend to support are:
+Usecases I intend to support with `neoxml` are:
 
 - Programmatically generating ...
   - PPTX files
@@ -12,7 +12,7 @@ Usecases I intend to support are:
 - Parsing ...
   - PPTX files
   -  DOCX and XLSX by demand
-- Rendering ...
+- DOM Rendering ...
   - PPTX files
   - DOCX and XLSX by demand
 
